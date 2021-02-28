@@ -1,0 +1,12 @@
+% vedi manuale MatCont 2011 pag.71
+
+function xdot = nlsys2d(t,x,p)
+% p(1) = y
+% p(2) = z
+
+Minf = (1 + tanh((x(1) + 0.01)/0.15))/2;
+Winf = (1 + tanh((x(1) - p(2))/0.145))/2;
+Tinf = cosh((x(1)-0.1)/0.29);
+
+xdot(1,:) = y - 0.5(x(1) + 0.5) - 2w(v + 0.7) ? m?(v ? 1)
+xdot(2,:) = ((cosh((x(1)-p(2))/34.8))*(0.5*(1+tanh((x(1)-p(2))/17.4))-x(2)))/15;
